@@ -6,11 +6,11 @@ Mobile and backend services for MyDocOnline
 
 To build an app/service to connect doctors with their prospective customers and enable the patients to make appointments online. 
 
-Public: Patients will be able to create/edit/delete appointments from a Calendar based UI. They will be able to see the open slots for a doctor in the calendar.
+`Public`: Patients will be able to create/edit/delete appointments from a Calendar based UI. They will be able to see the open slots for a doctor in the calendar.
 
 Note: We might have to bring in some kind of authentication here so that one patient cannot view/edit/delete other patients data - TBD
 
-Admin: Doctor will be able to see the list of appointments, edit/delete (make sure to send notifications). He also will be able to set Out of Office for a period of time where the patients won’t be able to make any appointments during that time frame.
+`Admin`: Doctor will be able to see the list of appointments, edit/delete (make sure to send notifications). He also will be able to set Out of Office for a period of time where the patients won’t be able to make any appointments during that time frame.
 
 
 ## Technical Documentation (WIP)
@@ -58,7 +58,7 @@ The backend will run on a node/express API server which will talk to a Mongo dat
 
 ### Proposed Mongo Schema
 
-Collection: Appointments
+Collection: `Appointments`
 ```
 {
   "_id": Mongo Object, // Auto Generated Unique ID
@@ -77,7 +77,7 @@ Collection: Appointments
 }
 ```
 
-Collection: Doctors
+Collection: `Doctors`
 ```
 {
  "_id": Mongo Object, // Auto Generated Unique ID
@@ -89,7 +89,7 @@ Collection: Doctors
 }
 ```
 
-Collection : OutOfOfficeEntries
+Collection : `OutOfOfficeEntries`
 ```
 {
   "_id": Mongo Object, // Auto Generated Unique ID
