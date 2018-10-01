@@ -25,34 +25,34 @@ The backend will run on a node/express API server which will talk to a Mongo dat
 
 #### Public endpoints (authenticated ??):
 
-POST /appointment
+`POST /appointment`
 	Create an appointment
 	
-PUT /appointment/<appointmentID>
+`PUT /appointment/<appointmentID>`
 	Edit an appointment
 	
-DELETE /appointment/<appointmentID>
+`DELETE /appointment/<appointmentID>`
 	Delete an appointment
 	
-GET /appointment (not authenticated)
+`GET /appointment (not authenticated)`
 	Gets all appointments - This endpoint should accept params to filter the data for different time periods and other search criteria (to discuss further)
 	
-GET /appointment/<appointmentID>
+`GET /appointment/<appointmentID>`
 	Get the details of a single appointment
 	
 
 #### Admin endpoints (authenticated):
 
-POST /admin/outofoffice
+`POST /admin/outofoffice`
 	Create a new OOO entry for a specific timeperiod
 	
-PUT /admin/outofoffice/<appointmentID>
+`PUT /admin/outofoffice/<appointmentID>`
 	Update an existing OOO entry for a specific timeperiod 
 	
-DELETE /admin/outofoffice/<appointmentID>
+`DELETE /admin/outofoffice/<appointmentID>`
 	Delete an existing OOO entry
 	
-GET  /admin/outofoffice/
+`GET  /admin/outofoffice/`
 	Gets all OOO entries
 	
 
